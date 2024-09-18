@@ -238,6 +238,7 @@ st.logo(
     link="images/logo.png",
     icon_image=LOGO_URL_SMALL,
 )
+
     # Initialize session state
     if 'num_results' not in st.session_state:
         st.session_state.num_results = num_results
