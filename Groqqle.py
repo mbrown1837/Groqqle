@@ -231,13 +231,7 @@ def update_sidebar(models):
         st.session_state.comprehension_grade = grade_labels.index(selected_grade) + 1
 
 def main(api_key_arg: str = None, num_results: int = 10, max_tokens: int = 4096, default_summary_length: int = 300):
-    st.set_page_config(page_title="Groqqle (Groq Search)", layout="wide", initial_sidebar_state="collapsed")
-
-st.logo(
-    LOGO_URL_LARGE,
-    link="images/logo.png",
-    icon_image=LOGO_URL_SMALL,
-)
+    st.set_page_config(page_title="Groqqle (Groq Search)",page_icon=":images/site logo.png:", layout="wide", initial_sidebar_state="collapsed")
 
     # Initialize session state
     if 'num_results' not in st.session_state:
